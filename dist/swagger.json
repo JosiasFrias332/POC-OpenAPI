@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Usuarios",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "Saludo",
+                "responses": {
+                    "200": {
+                        "description": "Respuesta exitosa"
+                    }
+                }
+            }
+        },
+        "/new-user": {
+            "post": {
+                "summary": "Crear un nuevo usuario",
+                "responses": {
+                    "200": {
+                        "description": "Usuario creado"
+                    }
+                }
+            }
+        },
+        "/change-user": {
+            "put": {
+                "summary": "Modificar un usuario existente",
+                "responses": {
+                    "200": {
+                        "description": "Usuario modificado"
+                    }
+                }
+            }
+        },
+        "/delete-user": {
+            "delete": {
+                "summary": "Eliminar un usuario",
+                "responses": {
+                    "200": {
+                        "description": "Usuario eliminado"
+                    }
+                }
+            }
+        }
+    }
+}
